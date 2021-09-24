@@ -1,4 +1,4 @@
-import { Controller } from 'stimulus';
+import { Controller } from "stimulus"
 
 export default class extends Controller {
   static targets = ['form', 'input'];
@@ -7,7 +7,7 @@ export default class extends Controller {
     console.log(this.inputTarget);
   }
 
-  update() {
+  updateList() {
 
   }
 }
