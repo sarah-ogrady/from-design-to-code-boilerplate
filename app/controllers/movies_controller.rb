@@ -8,7 +8,9 @@ class MoviesController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.text { render partial: 'movies/list', locals: { movies: @movies }, formats: [:html] }
+      format.text
+      # format.text { render partial: 'movies/list', locals: { movies: @movies }, formats: [:html] }
+      # format.json { render json: {hi: 'lucien'} }
       # I understnad this is re rendering the partial, giving the @movies instance variable
       # what is the respond_to iteration and what is 'format'
     end
